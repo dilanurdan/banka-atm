@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.Scanner; // Scanner sınıfını ekledik
 
 public class ATM {
     private Bank bank;
@@ -82,4 +82,12 @@ public class ATM {
                         System.out.println("Yetersiz bakiye.");
                     }
                 }
-                case 4
+                case 4 -> {
+                    System.out.println("Çıkış yapılıyor...");
+                    return; // Çıkış yapmak için
+                }
+                default -> System.out.println("Geçersiz seçim.");
+            }
+        }
+    }
+}
